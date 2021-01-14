@@ -15,9 +15,9 @@ parser.add_argument('--gpu', dest='gpu', type=int, default=-1)
 # parser.add_argument('--loss', dest='loss', type=str, default='Focal')
 # parser.add_argument('--logdp', dest='log_datapath', type=str, default='./log/')
 parser.add_argument('--wghdp', dest='weight_datapath', type=str, default='./weight/')
-# opt = parser.parse_args(args=["--md"])
+opt = parser.parse_args(args=["--nt", "--md"])
 # opt = parser.parse_args(args=["--hs", "32", "64", "64", "64", "64", "64"])
-opt = parser.parse_args()
+# opt = parser.parse_args()
 print(vars(opt))
 
 INPUT_SIZE = 300
